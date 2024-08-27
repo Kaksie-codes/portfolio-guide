@@ -13,6 +13,7 @@
 
 body{
     background-color: var(--primary-color);
+    color: white;
 }
 
 /* Utility Styles */
@@ -20,5 +21,40 @@ body{
     width: 100%;
     margin: 0 auto;
     max-width: 1200px;
-    background-color: red;
+    /* background-color: red; */
+}
+
+/* Header styles */
+header .container{
+    display: flex;
+    justify-content: space-between;
+    /* height: 70px; */
+    /* background-color: yellow; */
+    align-items: center;
+    /* margin-top: 30px; */
+    padding-top: 30px;
+}
+a.logo::before {
+    content: "</";
+    margin-right: -10px;
+}
+a.logo::after {
+    content: ">";
+    margin-left: -5px; /* Optional: adjust the spacing between the slash and the text */
+}
+.logo{
+    font-size: 30px;
+}
+.logo .red-text{
+    color: red;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+header nav ul{
+    display: flex;
+    list-style: none;
+    /* justify-content: space-between; */
+    gap: 20px;
 }
