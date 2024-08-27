@@ -1,0 +1,24 @@
+
+/* Reset Styling */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CSS Variables */
+:root{
+    --primary-color: #18315A;
+}
+
+body{
+    background-color: var(--primary-color);
+}
+
+/* Utility Styles */
+.container{    
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: red;
+}
