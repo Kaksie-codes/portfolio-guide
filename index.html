@@ -1,41 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <!-- Linking to an External CSS File -->
-    <link rel="stylesheet" href="/styles.css">
+    <title>Abdulmarteen Sanusi - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <!-- Navigation Bar -->
-     <header>
+    <!-- Header Section -->
+    <header>
         <div class="container">
-            <a href="" class="logo">                
-                <span class="red-text">Aromal</span>                
-            </a>
+            <h1 class="logo">
+                <span class="special-text">
+                    Abdulmarteen
+                </span>
+            </h1>
             <nav>
                 <ul>
-                    <li>
-                        <a href="">Home</a>
-                    </li>
-                    <li>
-                        <a href="">About</a>
-                    </li>
-                    <li>
-                        <a href="">Project</a>
-                    </li>
-                    <li>
-                        <a href="">Lets Talk</a>
-                    </li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </div>
-     </header>
+    </header>
+
     <!-- Hero Section -->
-    <!-- Skills/About Section -->
-    <!-- Project Section -->
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>AbdulMarteen Sanusi</h1>
+                    <h2>Frontend Developer</h2>
+                    <p>I build websites and anything digital!</p>
+                    <a href="#about" class="btn">Learn More</a>
+                </div>
+                <div class="hero-image">
+                    <img src="./avatar.jpg" alt="Abdulmarteen Sanusi">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">        
+            <h2>About Abdulmarteen</h2>
+            <div class="content">
+                <p>Hi, I'm Abdulmarteen! I know HTML, CSS, and JavaScript, and I love playing football. I want to be a software developer when I grow up.</p>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <h3>Rock Paper Scissors Game</h3>
+                    <p>A simple game where you play against the computer. Who will win?</p>
+                </div>
+                <div class="project">
+                    <h3>Quiz Game</h3>
+                    <p>Test your knowledge with this fun quiz game.</p>
+                </div>
+                <div class="project">
+                    <h3>My Portfolio Website</h3>
+                    <p>A showcase of all my projects and skills.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <!-- Footer -->    
+    <section id="contact">
+        <div class="container">
+            <h2>Contact Abdulmarteen</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <p>Made with love by Abdulmarteen Sanusi &copy; 2024</p>
+        </div>
+    </footer>
 </body>
+
 </html>
