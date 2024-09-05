@@ -185,13 +185,29 @@ header nav button{
     background: var(--project-card-color);
     padding: 20px;
     border-radius: 10px;
-    width: 300px;
+    /* width: 300px; */
+    max-width: 350px;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
 .project:hover {
     transform: translateY(-10px);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.project .btn{
+    background: var(--primary-color);
+    color: var(--light-color);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background 0.3s ease-in-out;
+}
+
+.project .btn:hover {
+    background: #2980b9;
 }
 
 /* Contact Section */
@@ -317,11 +333,7 @@ footer .container{
 }
 
 @media (max-width: 768px) {
-    header nav ul{
-        display: none;
-    }
-    header nav ul.active{
-        /* display: none; */
+    header nav ul {
         display: flex;
         position: fixed;
         flex-direction: column;
@@ -331,6 +343,12 @@ footer .container{
         top: 0;
         right: 0;
         width: 50vw;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in-out; /* Adding smooth transition */
+    }
+    
+    header nav ul.active {
+        transform: translateX(0%);
     }
     header nav ul.active li{
         font-size: 30px;
@@ -368,6 +386,12 @@ footer .container{
 
     #about ul li, .project {
         width: 100%;
+    }
+}
+@media (max-width: 450px){
+    #hero h1{
+        font-size: 45px;
+        line-height: 3.5rem;
     }
 }
 
