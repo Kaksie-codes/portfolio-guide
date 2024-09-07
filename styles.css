@@ -340,14 +340,16 @@ footer .container{
         color: var(--light-color);
         height: 100vh;
         top: 0;
-        right: 0;
+        right: -70vw;
         width: 70vw;
-        transform: translateX(100%);
-        transition: transform 0.5s ease-in-out; /* Adding smooth transition */
+        /* transform: translateX(100%); */
+        /* transition: transform 0.5s ease-in-out; */
+        transition: right 0.5s ease-in-out;
     }
     
     header nav ul.active {
-        transform: translateX(0%);
+        /* transform: translateX(0%); */
+        right: 0;
     }
     header nav ul.active li{
         font-size: 30px;
